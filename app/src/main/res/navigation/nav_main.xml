@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.youtubepure.ui.home.fragments.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/myAccountFragment"
+        android:name="com.example.youtubepure.ui.myaccount.fragments.MyAccountFragment"
+        android:label="MyAccountFragment" />
+    <fragment
+        android:id="@+id/myVideoFragment"
+        android:name="com.example.youtubepure.ui.myvideo.fragments.MyVideoFragment"
+        android:label="MyVideoFragment" />
+    <fragment
+        android:id="@+id/clubFragment"
+        android:name="com.example.youtubepure.ui.club.ClubFragment"
+        android:label="ClubFragment" />
+</navigation>

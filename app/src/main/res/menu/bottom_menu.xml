@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment2"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/color_979797"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/myVideoFragment"
+        android:icon="@drawable/ic_my_video"
+        android:iconTint="@color/color_979797"
+        android:title="@string/my_video" />
+    <item
+        android:id="@+id/clubFragment"
+        android:icon="@drawable/ic_club"
+        android:iconTint="@color/color_979797"
+        android:title="@string/club"/>
+    <item
+        android:id="@+id/myAccountFragment"
+        android:icon="@drawable/ic_my_account"
+        android:iconTint="@color/color_979797"
+        android:title="@string/me" />
+</menu>

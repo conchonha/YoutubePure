@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.myaccount.fragments.MyAccountFragment">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.home.fragments.HomeFragment">
+
+            <RelativeLayout
+                android:id="@+id/relative_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/h9A000000"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/edt_search"
+                    style="@style/TitleStyle.edittext"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/bg_edt_search"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableStart="@drawable/ic_search"
+                    android:padding="@dimen/_2sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/edt_search"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_vip" />
+
+                <TextView
+                    android:id="@+id/title_logo"
+                    style="@style/TitleStyle"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/color_0fc91e" />
+            </RelativeLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager_home"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="@dimen/dp0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_home" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relative_header" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+
+    <data>
+
+    </data>
+</layout>
